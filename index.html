@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissor</title>
+    <link rel="stylesheet" href="./RPC.css">
+</head>
+<body>
+        <h3>Rock-Paper-Scissor</h3>
+        
+    <div class="bdy">
+        
+        <p class="js-result result" ></p>
+        <p class="js-moves"></p>
+        <p class="js-scoreBoard scoreBoard"></p>
+
+        <button class="Reset-btn" onclick="
+            scoreBoard.Wins=0;
+            scoreBoard.Losses=0;
+            scoreBoard.Ties=0;
+            localStorage.removeItem('scoreBoard');
+            scoreUpdate();
+            ">Reset Score
+        </button>
+        
+        <h5 >Choose</h5>
+        <div class="moove-btn">
+            <button class="button js-rockbtn">
+                <img src="./images/rock-emoji.png" class="icon">
+            </button>
+
+            <button class="button js-paperbtn">
+                <img src="./images/paper-emoji.png" class="icon">
+            </button>
+
+            <button class="button js-scissorbtn" >
+                <img src="./images/scissor-emoji.png" class="icon">
+            </button>
+        </div>
+    </div>
+        
+    <script src="./RPC.js">
+    </script>
+</body>
+</html>
